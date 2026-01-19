@@ -1,13 +1,13 @@
 # print 
 # Es la función más básica al usar Python
 
-print("Hola mundo")
+print("Hola mundo") # String o cadena de texto es lo que esta dentro de comillas
 
 # Variables:
 # Es un contenedor para guardar datos
 
-saludos = "Hola a todos"
-print(saludos)
+saludo = "Hola a todos"
+print(saludo)
 
 # Un variable jamás debe empezar con un numero
 
@@ -31,7 +31,7 @@ numero = 2
 print(type(numero)) # es un tipo de variable (int) entero
 
 mensaje = "probando"
-print(type(mensaje)) # esun tipo de dato (str) string o cadena de texto
+print(type(mensaje)) # es un tipo de dato (str) string o cadena de texto
 
 valor = True
 print(valor) # es un tipo de dato (bool) booleano estos son verdadero o falso
@@ -42,3 +42,5 @@ print(valor) # es un tipo de dato (bool) booleano estos son verdadero o falso
 var_name = "snake_case" # lo que esta en comillas son los nombres del tipo de creación de variable
 Var_Name = "pascal_case"
 var_Name = "camel_case"
+# Nota: Python no distingue entre mayúsculas y minúsculas
+# Nota: En python no se pude crear variables con espacios y que empiecen con numeros
