@@ -1,4 +1,8 @@
 # List (listas o conocidas tambien como arrays)
+# Se permite hacer cambios osea son modificables
+# Se permite tener duplicados de un item
+# Son ordenadas
+
 frutas = ["Manzana", "platano", "pera", "uva"]
 print(type(frutas))
 
@@ -65,3 +69,8 @@ print(fusion[0])
 print(fusion[1])
 print(fusion[0][2])
 print(fusion[1][5])
+
+marcas_carros = ["Toyota", "Ford", "Nissan", "Chevrolet"]
+print(marcas_carros)
+del marcas_carros[2] # del se usa para eliminar un item dentro de la lista
+print(marcas_carros)
