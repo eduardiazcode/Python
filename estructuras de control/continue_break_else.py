@@ -1,5 +1,10 @@
+# Breack rompe (cancela el bucle)
+# Continue permmite saltar a la siguiente posicion
+# else ejecuta una porcion del codigo cuando termina el ciclo
+
+
 # Break: Romper/detener el bucle
-"""
+
 for i in range(1, 10):
     print(i)
     if i == 5: # cuando llegue el bucle a 5 se detendra el ciclo
@@ -43,7 +48,7 @@ for num in range(1, 11):
         continue
     print(num)
      # Si es par
-"""
+
 
 variables = [5, -3, 8, -1, 12, -7, 20]
 
@@ -63,4 +68,4 @@ for mixto in (frutas, verdura):
         continue
     print(f"Estas son las ricas frutas: {frutas}")
 # ==================================================================================
-# ELse : 
+# ELse : en un bucle se ejecuta SOLO si el bucle terminó normalmente, es decir, SIN usar break.
