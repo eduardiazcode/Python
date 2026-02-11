@@ -5,19 +5,19 @@ Aplicación de consola en Python para administrar gastos personales de forma sim
 ## 📸 Capturas de Pantalla
 
 ### Pantalla de Bienvenida
-![Bienvenida](screenshots/Bienvenida.png)
+![Bienvenida](./screenshots/Bienvenida.png)
 
 ### Agregar Gasto
-![Agregar Gasto](screenshots/Agregar.png)
+![Agregar Gasto](./screenshots/Agregar.png)
 
 ### Visualizar Gastos
-![Ver Gastos](screenshots/lista.png)
+![Ver Gastos](./screenshots/lista.png)
 
 ### Calcular Total
-![Calcular Total](screenshots/total.png)
+![Calcular Total](./screenshots/total.png)
 
 ### Eliminar Gasto
-![Eliminar](screenshots/eliminar.png)
+![Eliminar](./screenshots/eliminar.png)
 
 ## 🚀 Características
 
