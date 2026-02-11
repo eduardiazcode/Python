@@ -5,19 +5,19 @@ Aplicación de consola en Python para administrar gastos personales de forma sim
 ## 📸 Capturas de Pantalla
 
 ### Pantalla de Bienvenida
-![Bienvenida](./screenshots/Bienvenida.png)
+![Bienvenida](https://raw.githubusercontent.com/eduardiazcode/Python/main/Proyectos_personales/gestor_gastos/screenshots/Bienvenida.png)
 
 ### Agregar Gasto
-![Agregar Gasto](./screenshots/Agregar.png)
+![Agregar Gasto](https://raw.githubusercontent.com/eduardiazcode/Python/main/Proyectos_personales/gestor_gastos/screenshots/Agregar.png)
 
 ### Visualizar Gastos
-![Ver Gastos](./screenshots/lista.png)
+![Ver Gastos](https://raw.githubusercontent.com/eduardiazcode/Python/main/Proyectos_personales/gestor_gastos/screenshots/lista.png)
 
 ### Calcular Total
-![Calcular Total](./screenshots/total.png)
+![Calcular Total](https://raw.githubusercontent.com/eduardiazcode/Python/main/Proyectos_personales/gestor_gastos/screenshots/total.png)
 
 ### Eliminar Gasto
-![Eliminar](./screenshots/eliminar.png)
+![Eliminar](https://raw.githubusercontent.com/eduardiazcode/Python/main/Proyectos_personales/gestor_gastos/screenshots/eliminar.png)
 
 ## 🚀 Características
 
@@ -30,36 +30,40 @@ Aplicación de consola en Python para administrar gastos personales de forma sim
 ## 🛠️ Tecnologías
 
 - Python 3.x
-- Sistema de menús interactivo con `match-case`
 - Manejo de estructuras de datos (listas y diccionarios)
+- Control de flujo con match-case
+- Manejo de excepciones
 
 ## 📦 Instalación
 ```bash
 # Clona el repositorio
-git clone https://github.com/eduardiazcode/Python/tree/221va4fde4f7bea225a3d31a82790762226089c/Proyectos_personales/gestor_gastos
+git clone https://github.com/eduardiazcode/Python.git
 
 # Navega al directorio
-cd gastos_personales
+cd Python/Proyectos_personales/gestor_gastos
 
 # Ejecuta el programa
 python gastos_personales.py
 ```
 
-### Menú Principal
-```
-Seleccione una opcion:
+## 💡 Uso
 
-1. Ingrese el gasto
-2. Ver los gastos realizados
-3. Calcular el gasto acumulado
-4. Eliminar gasto
-5. Salir
-```
+El programa presenta un menú interactivo con las siguientes opciones:
+
+1. **Agregar gasto**: Registra un nuevo gasto con descripción y monto
+2. **Ver gastos**: Muestra todos los gastos registrados
+3. **Calcular total**: Suma todos los gastos acumulados
+4. **Eliminar gasto**: Permite borrar un gasto específico
+5. **Salir**: Cierra el programa
 
 ## 👨‍💻 Autor
 
-Eduardo Díaz - [LinkedIn]www.linkedin.com/in/eduardodiazdev
+Eduardo Díaz
 
-## 📝 Licencia
+## 📝 Notas
 
-Este proyecto es de código abierto y está disponible para fines educativos.
+Este proyecto fue desarrollado como práctica de programación en Python, enfocándose en:
+- Manejo de datos con diccionarios y listas
+- Funciones y modularización de código
+- Interfaz de usuario en consola
+- Control de excepciones
