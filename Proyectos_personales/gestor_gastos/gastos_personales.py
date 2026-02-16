@@ -1,9 +1,5 @@
 # GESTOR DE GASTOS PERSONALES
 
-# Agregar gasto
-# Ver todos los gatos
-# Calcular total gastado
-# Eliminar gasto
 import os
 
 runProgram = True
