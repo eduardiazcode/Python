@@ -30,7 +30,6 @@ def borrar_historial():
 # Funcion principal del programa
 def main():
     global runProgram
-    os.system("clear")
 
     print("=" * 50)
     print(".: CALCULADORA DE ENERGIA SOLAR ☀️⚡:. ")
