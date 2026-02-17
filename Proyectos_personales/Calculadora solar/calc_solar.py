@@ -6,19 +6,39 @@
 # Salir del programa
 import os
 runProgram = True
+calculos_list = []
 
 # Funcion para mostrar las opciones del menu
 def showMenuOption():
     print("CALCULADORA SOLAR - JULIACA")
     print("Seleccione una opcion: ")
     print("")
-    print("1. Calcular la energia de un panel solar: ")
-    print("2. Ver historial de los calculos solares: ")
-    print("3. Borrar un calculos del historial de calculos: ")
+    print("1. Calcular la energia de un panel solar")
+    print("2. Ver historial de los calculos")
+    print("3. Borrar un calculo del historial: ")
     print("4. Salir")
 
-def calcular_energia_solar():
-    pass
+# Funcion del calculo de energia generada por un panel solar
+def calcular_energia_solar(area, irradiancia, rendimiento):
+    # Formula: E = AREA * IRRADIANCIA * RENDIMIENTO
+    # Retorna: energia en kwh/dia
+
+    energia = area * irradiancia * rendimiento
+    return round(energia,2) # round es funcion que redondee un numero decimal con 2 decimales
+
+# Funcion del calculo de ahoror economico mensual
+def calcular_ahorro(energia_kwh, precio_kwh):
+    ahorro_diario = energia_kwh * precio_kwh
+    ahorro_mensual = ahorro_diario * 30
+    return round(ahorro_mensual, 2)
+
+def programa_calculo():
+    global calculos_list
+
+    if len(calculos_list) ==0:
+        print("\n⚠️ NO hay calculos en el historial aun")
+        print(" Use la opcion 1 para generar su primer cálculo")
+        return
 
 def historial_calculos():
     pass
