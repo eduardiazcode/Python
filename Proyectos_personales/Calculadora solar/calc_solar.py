@@ -8,6 +8,10 @@ import os
 runProgram = True
 calculos_list = []
 
+# ===========================================
+# FUNCIONES DEL MENÚ
+# ===========================================
+
 # Funcion para mostrar las opciones del menu
 def showMenuOption():
     print("CALCULADORA SOLAR - JULIACA")
@@ -17,6 +21,34 @@ def showMenuOption():
     print("2. Ver historial de los calculos")
     print("3. Borrar un calculo del historial: ")
     print("4. Salir")
+
+def mostrar_historial():
+    global calculos_list
+
+    if len(calculos_list) ==0:
+        print("\n⚠️ No hay calculos en el historial aun")
+        print(" Use la opcion 1 para generar su primer cálculo")
+        return
+    
+    print("*" * 60)
+    print("HISTORIAL DE CÁLCULOS")
+    print("*" * 60)
+
+    for i, calc in enumerate(calculos_list): # Recorre cada diccionario de la lista
+        # enumerate: permite a;adir un contador automático
+        print(f"\n📊 Cálculo #{i + 1}")
+        print(f"Fecha: {calc['fecha']}")
+        print(f"Area del panel: {calc['area']}")
+        print(f"Irradiancia: {calc['irradiancia']} kWh/m²/día")
+        print(f"Rendimiento: {calc['rendimientio'] * 100}%")
+        print(f"Energia generada: {calc['energia']} kW/día")
+        print(f"Ahorro mensual: S/. {calc['ahorro']}")
+        print(f"Ahorro anual: S/. {calc['ahorro'] * 12}")
+        print("*" * 60)
+
+# ==================================================
+# FUNCIONES DE CALCULO
+# ==================================================
 
 # Funcion del calculo de energia generada por un panel solar
 def calcular_energia_solar(area, irradiancia, rendimiento):
@@ -32,13 +64,12 @@ def calcular_ahorro(energia_kwh, precio_kwh):
     ahorro_mensual = ahorro_diario * 30
     return round(ahorro_mensual, 2)
 
-def programa_calculo():
+# FUncion que solicita calculos y realiza el calculo solar
+def crear_calculo():
+    os.system("clear")
     global calculos_list
 
-    if len(calculos_list) ==0:
-        print("\n⚠️ NO hay calculos en el historial aun")
-        print(" Use la opcion 1 para generar su primer cálculo")
-        return
+    
 
 def historial_calculos():
     pass
@@ -73,7 +104,7 @@ def main():
                 case 1:
                     calcular_energia_solar()
                 case 2 :
-                    historial_calculos()
+                    mostrar_historial()
                 case 3:
                     borrar_historial()
                 case 4:
